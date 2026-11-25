@@ -1,0 +1,63 @@
+:root { color: #101010; background: #fafafa; font-family: "PingFang SC", "Noto Sans SC", sans-serif; }
+body { background: #fafafa; }
+.topbar { background: #111; color: white; border: 0; }
+.logo { color: white; font: 800 .95rem/1 ui-monospace, monospace; letter-spacing: .16em; }
+.intro { padding: 1.5rem 0; border-bottom: 4px solid #111; align-items: flex-end; }
+.intro h1 { color: #111; font-family: "Songti SC", "Noto Serif SC", serif; font-size: clamp(2.6rem, 7vw, 5.8rem); letter-spacing: -.065em; margin: 0; }
+.intro-actions { flex-wrap: wrap; }
+.panel, dialog, .pot, .prompt, .roles span { border: 1px solid #cecece; border-radius: 0; box-shadow: none; }
+.panel-head, .arena-head, .list-labels, .duel-row { border-color: #dedede; }
+.list-labels, .prompt, .timer-line { background: #f0f0f0; color: #383838; }
+.panel h2 { font-family: "Songti SC", "Noto Serif SC", serif; }
+.primary, .wallet, .wallet.connected, .tab.active { background: #00d1ed; color: #072126; border-radius: 4px; }
+.secondary, .tab { color: #141414; border: 1px solid #c8c8c8; border-radius: 4px; background: white; }
+.tabs { gap: .35rem; }
+.primary:disabled, button:disabled { cursor: not-allowed; opacity: .5; }
+.duel-row:hover { background: #f4f4f4; }
+.duel-row.selected { box-shadow: inset 3px 0 #00bbd1; }
+.topic-library { margin-bottom: 24px; }
+.topic-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr)); }
+.topic-list article { padding: 1.5rem; border: 1px solid #eee; }
+.topic-list p, .note, .empty, .muted { color: #505050; line-height: 1.65; }
+#duel-list { min-height: 3.25rem; }
+#duel-list:not(:has(button)) { padding: 1rem 26px; color: #505050; }
+#action-note:empty { display: none; }
+#action-note { margin-bottom: 16px; }
+input, select, textarea { border-color: #bcbcbc; border-radius: 4px; }
+button:focus-visible, a:focus-visible { outline: 2px solid #007b8c; outline-offset: 3px; }
+[hidden] { display: none !important; }
+
+:root {
+  color-scheme: dark;
+  --ink: #eef3f0;
+  --line: #2b3732;
+  --mint: #62e6b4;
+  --orchid: #d1a0c6;
+  color: var(--ink);
+  background: #101311;
+}
+body { background: radial-gradient(ellipse at 64% 0%, #1b2c25, transparent 40rem), #101311; }
+.topbar { background: #111614; border-bottom: 1px solid var(--line); }
+.logo { color: var(--mint); }
+.intro { border-bottom: 1px solid #41574c; padding-block: clamp(2rem, 6vw, 4.75rem); }
+.intro h1 { color: var(--ink); font-family: inherit; letter-spacing: -.045em; }
+.panel, dialog, .modal, .duel-row, .wallet-option { background: #171d1a; border-color: var(--line); color: var(--ink); }
+.panel h2 { font-family: inherit; }
+.panel-head, .arena-head, .list-labels, .duel-row, .topic-list article { border-color: var(--line); }
+.list-labels, .prompt, .timer-line, .roles span, .pot { background: #131916; border-color: var(--line); color: #bac9c0; }
+.primary, .wallet, .wallet.connected, .tab.active { background: var(--mint); color: #09251a; }
+.primary:hover:not(:disabled), .wallet:hover { background: #8ff0ca; }
+.secondary, .tab { background: transparent; color: #c1cbc5; border-color: var(--line); }
+.intro .secondary { color: var(--orchid); border-color: #694f65; }
+.duel-row:hover, .wallet-option:hover { background: #202b25; }
+.duel-row.selected { box-shadow: inset 3px 0 var(--mint); }
+.topic-list p, .note, .empty, .muted, .modal > p, #duel-list:not(:has(button)) { color: #aab9b0; }
+.roles b, .carrot b, .timer-line strong { color: var(--mint); }
+.status.open { background: #233c30; color: var(--mint); }
+.status.matched { background: #352938; color: var(--orchid); }
+input, select, textarea { background: #111714; border-color: var(--line); color: var(--ink); }
+input:focus, select:focus, textarea:focus { border-color: var(--mint); box-shadow: 0 0 0 2px #62e6b42e; }
+button:focus-visible, a:focus-visible { outline-color: var(--mint); }
+.section-navigation { display: flex; gap: 1.65rem; margin: -1rem 0 1.5rem; border-bottom: 1px solid var(--line); }
+.section-navigation a { color: #aab9b0; padding: .8rem .15rem; text-decoration: none; border-bottom: 2px solid transparent; }
+.section-navigation a[aria-current] { color: var(--mint); border-color: var(--mint); }
